@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slaughterhouse Manager Dashboard</title>
+    <link rel="stylesheet" href="slaughterHouseManager.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- For Graphs -->
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <h2>Slaughterhouse Dashboard</h2>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#overview">Dashboard Overview</a></li>
+            <li><a href="#production">Production Tracking</a></li>
+            <li><a href="#inventory">Inventory Management</a></li>
+            <li><a href="#supply-chain">Supply Chain</a></li>
+            <li><a href="#compliance">Compliance & Reporting</a></li>
+            <li><a href="#employee-management">Employee Management</a></li>
+            <li><a href="#market-trends">Market Trends</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Area -->
+    <div class="dashboard-content">
+        <header>
+            <h1>Slaughterhouse Manager Dashboard</h1>
+        </header>
+
+        <!-- Dashboard Overview Section -->
+        <section id="overview" class="dashboard-section">
+            <h2>Dashboard Overview</h2>
+            <p>Overview of key metrics including animals processed, inventory levels, and more.</p>
+            <canvas id="overviewGraph"></canvas>
+        </section>
+
+        <!-- Production Tracking Section -->
+        <section id="production" class="dashboard-section">
+            <h2>Production Tracking</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Animal ID</th>
+                        <th>Species</th>
+                        <th>Processing Date</th>
+                        <th>Meat Yield (kg)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>001</td>
+                        <td>Cattle</td>
+                        <td>Jan 10, 2025</td>
+                        <td>250 kg</td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>Sheep</td>
+                        <td>Jan 12, 2025</td>
+                        <td>35 kg</td>
+                    </tr>
+                    <tr>
+                        <td>003</td>
+                        <td>Goat</td>
+                        <td>Jan 15, 2025</td>
+                        <td>40 kg</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Inventory Management Section -->
+        <section id="inventory" class="dashboard-section">
+            <h2>Inventory Management</h2>
+            <canvas id="inventoryGraph"></canvas>
+            <p>Real-time inventory levels of processed meat and by-products.</p>
+        </section>
+
+        <!-- Supply Chain Section -->
+        <section id="supply-chain" class="dashboard-section">
+            <h2>Supply Chain</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Stock Level</th>
+                        <th>Last Shipment</th>
+                        <th>Next Delivery</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Beef</td>
+                        <td>500 kg</td>
+                        <td>Jan 20, 2025</td>
+                        <td>Feb 10, 2025</td>
+                    </tr>
+                    <tr>
+                        <td>Pork</td>
+                        <td>300 kg</td>
+                        <td>Jan 18, 2025</td>
+                        <td>Feb 12, 2025</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Compliance & Reporting Section -->
+        <section id="compliance" class="dashboard-section">
+            <h2>Compliance & Reporting</h2>
+            <p>Track health and safety compliance, certifications, and regulatory reports.</p>
+            <button class="generate-report-btn">Generate Report</button>
+        </section>
+
+        <!-- Employee Management Section -->
+        <section id="employee-management" class="dashboard-section">
+            <h2>Employee Management</h2>
+            <p>Manage work shifts, performance, and safety records for slaughterhouse employees.</p>
+        </section>
+
+        <!-- Market Trends Section -->
+        <section id="market-trends" class="dashboard-section">
+            <h2>Market Trends</h2>
+            <canvas id="marketTrendsGraph"></canvas>
+            <p>View real-time market trends for meat products and pricing analysis.</p>
+        </section>
+    </div>
+
+    <script src="slaughterHouseManager.js"></script>
+</body>
+</html>

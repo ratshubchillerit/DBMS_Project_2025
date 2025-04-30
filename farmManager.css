@@ -1,0 +1,391 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Layout */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  background: linear-gradient(145deg, #e3f2fd, #ffffff);
+  color: #333;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 260px;
+  height: 100vh;
+  background-color: #2e3a59;
+  color: #fff;
+  padding: 25px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.sidebar-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.sidebar-header h2 {
+  font-size: 2rem;
+  color: #fdd835;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 20px 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 12px 20px;
+  display: block;
+  border-radius: 8px;
+  transition: 0.3s;
+  color: #fff;
+  background-color: transparent;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  background-color: #fdd835;
+  color: #2e3a59;
+  font-weight: bold;
+}
+
+/* Main Dashboard Content */
+.dashboard-content {
+  margin-left: 260px;
+  padding: 30px;
+  width: calc(100% - 260px);
+}
+
+/* Header */
+header {
+  margin-bottom: 40px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+}
+
+header h1 {
+  font-size: 2.8rem;
+  color: #2e3a59;
+}
+
+/* Dashboard Sections */
+.dashboard-section {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 40px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.dashboard-section:hover {
+  transform: translateY(-5px);
+}
+
+.dashboard-section h2 {
+  font-size: 2rem;
+  color: #00796b;
+  margin-bottom: 15px;
+}
+
+.dashboard-section p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table,
+th,
+td {
+  border: 1px solid #e0e0e0;
+}
+
+th,
+td {
+  padding: 14px 12px;
+  text-align: center;
+}
+
+th {
+  background-color: #00796b;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Charts */
+canvas {
+  width: 500px !important;
+  height: 500px !important;
+  margin: auto;
+  display: block;
+  margin-top: 30px;
+}
+
+/* Farmer Section Styling */
+#farmers {
+  background-color: #fefae0;
+}
+
+#farmers table th {
+  background-color: #ffb703;
+  color: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px;
+  }
+
+  .dashboard-content {
+    margin-left: 200px;
+    width: calc(100% - 200px);
+    padding: 20px;
+  }
+
+  canvas {
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  height: 100vh;
+  background-color: #ecf0f1;
+}
+
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background: linear-gradient(145deg, #1d3557, #2a9d8f);
+  color: #fff;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.15);
+}
+
+.sidebar-header {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.sidebar-header h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  padding-left: 0;
+}
+
+.nav-links li {
+  margin: 18px 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  display: block;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: all 0.3s;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  background-color: #f4a261;
+  color: #1d3557;
+}
+
+.dashboard-content {
+  margin-left: 250px;
+  padding: 30px;
+  width: calc(100% - 250px);
+  overflow-y: auto;
+}
+
+header {
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 2.8rem;
+  color: #264653;
+}
+
+.dashboard-section {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 40px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.dashboard-section:hover {
+  transform: scale(1.005);
+}
+
+.dashboard-section h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #2a9d8f;
+}
+
+.dashboard-section p {
+  font-size: 1.1rem;
+  color: #6c757d;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  background-color: #fff;
+}
+
+table,
+th,
+td {
+  border: 1px solid #dee2e6;
+}
+
+th,
+td {
+  padding: 12px 14px;
+  text-align: center;
+}
+
+th {
+  background-color: #2a9d8f;
+  color: #fff;
+  font-weight: 600;
+}
+
+tr:nth-child(even) {
+  background-color: #f6f6f6;
+}
+
+canvas {
+  display: block;
+  margin: 0 auto;
+  max-width: 500px;
+  max-height: 500px;
+}
+
+/* Scrollbar for long dashboard */
+.dashboard-content::-webkit-scrollbar {
+  width: 10px;
+}
+
+.dashboard-content::-webkit-scrollbar-thumb {
+  background-color: #2a9d8f;
+  border-radius: 5px;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px;
+  }
+
+  .dashboard-content {
+    margin-left: 200px;
+    width: calc(100% - 200px);
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .dashboard-section h2 {
+    font-size: 1.6rem;
+  }
+
+  table,
+  th,
+  td {
+    font-size: 0.9rem;
+  }
+}
+.batch-detail-group {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+}
+.batch-detail-group table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.batch-detail-group th,
+.batch-detail-group td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+.batch-detail-group th {
+  background-color: #eee;
+}
+
+.add-livestock-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #4caf50, #2e7d32);
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(76, 175, 80, 0.4);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.add-livestock-btn:hover {
+  background: linear-gradient(135deg, #66bb6a, #388e3c);
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(56, 142, 60, 0.6);
+}
